@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      body {
+        /* background-color: rgb(246, 0, 0); */
+        opacity: 1;
+        background-image: url("counting.jpg");
+        /* background-color: aquamarine; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+      }
+
+      .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        width: 50%;
+        margin: auto;
+      }
+      #increment-btn {
+        padding: 10px 40px;
+        background-color: rgb(169, 8, 8);
+        color: white;
+        /* border: 1px solid red; */
+        border: none;
+        outline: none;
+        font-weight: bolder;
+        font-size: 25px;
+      }
+      .btn {
+        padding: 10px 40px;
+        background-color: rgb(169, 8, 8);
+        color: white;
+        /* border: 1px solid red; */
+        border: none;
+        outline: none;
+        font-weight: bolder;
+        font-size: 25px;
+        margin-top: 10px;
+      }
+
+      .btn3 {
+        padding: 10px 40px;
+        background-color: rgb(169, 8, 8);
+        color: white;
+        /* border: 1px solid red; */
+        border: none;
+        outline: none;
+        font-weight: bolder;
+        font-size: 25px;
+        margin-top: 10px;
+      }
+
+      h2 {
+        font-size: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>People Entered:</h1>
+      <h2 id="count-p">0</h2>
+      <p id="log"></p>
+
+      <button onclick="myFun()" id="increment-btn">COUNT</button>
+      <button onclick="myFunClear()" id="increment-btn2" class="btn">
+        CLEAR
+      </button>
+
+      <button onclick="save()" class="btn3">Save Log</button>
+      <button onclick="clearlog()" class="btn3">Clear Log</button>
+    </div>
+    <!-- <script src="main.js"></script> -->
+
+    <!-- <script>
+      let lapComplete = 0;
+
+      function myFun() {
+        lapComplete = lapComplete + 1;
+
+        a = 0;
+
+        a += lapComplete;
+
+        document.getElementById("count-p").innerHTML = a;
+      }
+
+      // myFun()
+
+      function myFunClear() {
+        lapComplete = 0;
+        alert("You Are About To Reset");
+        document.getElementById("count-p").innerHTML = 0;
+      }
+    </script> -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
